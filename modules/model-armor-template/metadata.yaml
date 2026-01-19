@@ -138,7 +138,9 @@ spec:
                           - - object
                             - filter_enforcement: string
             id: string
-            labels: map(string)
+            labels:
+              - map
+              - string
             location: string
             name: string
             project: string
