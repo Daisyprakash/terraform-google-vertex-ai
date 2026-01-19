@@ -14,15 +14,7 @@
  * limitations under the License.
  */
 
-terraform {
-  required_version = ">= 1.3"
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = ">= 6.42, < 8"
-    }
-  }
-  provider_meta "google" {
-    module_name = "blueprints/terraform/terraform-google-vertex-ai:workbench/v2.4.0"
-  }
+variable "project_id" {
+  description = "The ID of the Google Cloud project in which to deploy the Reasoning Engine."
+  type        = string
 }

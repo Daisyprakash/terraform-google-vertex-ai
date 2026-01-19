@@ -15,14 +15,11 @@
  */
 
 terraform {
-  required_version = ">= 1.3"
   required_providers {
     google = {
       source  = "hashicorp/google"
-      version = ">= 6.42, < 8"
+      version = ">= 7.6, < 8"
     }
   }
-  provider_meta "google" {
-    module_name = "blueprints/terraform/terraform-google-vertex-ai:workbench/v2.4.0"
-  }
+  required_version = ">= 1.3"
 }
